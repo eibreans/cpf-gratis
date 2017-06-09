@@ -11,8 +11,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "fabpot/goutte": "3.*",
-        "jansenfelipe/utils": "^2.0@dev"
+        "fabpot/goutte": "3.*"
     },
     "autoload": {
         "psr-4": {
