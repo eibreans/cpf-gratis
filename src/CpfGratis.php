@@ -4,7 +4,6 @@ namespace JansenFelipe\CpfGratis;
 
 use Exception;
 use Goutte\Client;
-use JansenFelipe\Utils\Utils;
 use Symfony\Component\DomCrawler\Crawler;
 
 class CpfGratis {
@@ -62,9 +61,6 @@ class CpfGratis {
     public static function consulta($cpf, $nascimento, $captcha, $stringCookie, $token)
     {
         $arrayCookie = explode(';', $stringCookie);
-
-        if (!Utils::isCpf($cpf))
-            throw new Exception("CPF inválido");
 
         $client = new Client(['allow_redirects' => false]);
 
